@@ -13,10 +13,4 @@ error_reporting(E_ALL ^ E_DEPRECATED);
 
 $conexiune = mysql_connect($AdresaBazaDate,$UtilizatorBazaDate,$ParolaBazaDate) or die("Nu ma pot conecta la MySQL!");
 mysql_select_db($NumeBazaDate, $conexiune) or die("Nu gasesc baza de date");
-// try {
-//     $conn = new PDO('mysql:host=localhost;dbname={$NumeBazaDate}', $UtilizatorBazaDate, $ParolaBazaDate);
-// } catch (PDOException $e) {
-//     print "Error!: " . $e->getMessage() . "<br/>";
-//     die();
-// }
 ?>

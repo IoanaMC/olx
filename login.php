@@ -11,8 +11,6 @@ if (!(isset($_SESSION['nu']))) { /*daca nu e deja logat*/
 			$parolau = mysql_real_escape_string($_POST['Parola']);
 			
 			$sql = "SELECT id,nume FROM utilizator WHERE nume = '$numeu' AND parola = '$parolau'";
-			// $result = $conn->query($sql);
-			// var_dump($result)
 			$result = mysql_query($sql);
 			if ($result != FALSE) {
 				if (mysql_num_rows($result) == 1) {
