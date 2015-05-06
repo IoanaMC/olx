@@ -1,0 +1,87 @@
+/* lg */
+@media(min-width:1200px){
+
+}
+
+/* md */
+@media(min-width:768px) and (max-width: 991px) {
+	.banner .contact {
+		font-size: 14px !important;
+	}
+
+	.nav>li>a {
+		font-size: 13px !important;
+	}
+
+	.btn-large, .btn-small {
+		padding: 15px !important;
+	}
+
+	.user-box .title {
+		word-wrap:break-word;
+		padding-right: 12px;
+		font-size: 16px !important;
+	}
+
+	.float-right-foto {
+		margin: 0 !important;
+	}
+
+	.login-input {
+		width: 100% !important;
+	}
+
+	.score-input {
+	    font-size: 45px !important;
+	    height: 45px !important;
+	    left: 94px !important;
+	    line-height: 45px !important;
+	    top: 88px !important;
+	    width: 45px !important;
+	}
+}
+
+/* sm */
+@media(max-width:767px){
+	h1 {
+		font-size: 50px !important;
+	}
+
+	.banner .contact {
+		font-size: 14px !important;
+	}
+
+	.footer-logo {
+		position: relative !important;
+		text-align: center;
+		top:0 !important;
+		right: 0 !important;
+	}
+
+	.nav>li>a {
+	    font-size: 12px !important;
+	}
+
+	.user-box .title {
+		margin-bottom: 60px !important;
+	}
+
+	.score-input {
+		left:272px !important;
+		top:278px !important;
+	}
+
+	.login-input {
+		width: 100% !important;
+	}
+}
+
+/* xs */
+@media(max-width:480px){
+
+}
+
+
+
+
+

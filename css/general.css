@@ -1,0 +1,386 @@
+/* ---------------------------------
+fonts
+--------------------------------- */
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+
+/* ---------------------------------
+widths
+--------------------------------- */
+
+.width-10 {
+    width: 10%;
+}
+
+.width-20 {
+    width: 20%;
+}
+
+.width-30 {
+    width: 30%;
+}
+
+.width-40 {
+    width: 40%;
+}
+
+.width-50 {
+    width: 50%;
+}
+
+.width-60 {
+    width: 60%;
+}
+
+.width-70 {
+    width: 70%;
+}
+
+.width-80 {
+    width: 80%;
+}
+
+.width-90 {
+    width: 90%;
+}
+
+.width-100 {
+    width: 100%;
+}
+
+
+/* ---------------------------------
+positions
+--------------------------------- */
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.clear {
+    clear: both!important;
+}
+
+.inline-block {
+    display: inline-block;
+    *display: inline;
+}
+
+
+/* ---------------------------------
+spacers
+--------------------------------- */
+.no-margin {
+    margin: 0 !important;
+}
+
+.margin-10 {
+    width: 100%;
+    margin: 10px 0;
+    content:'&nbsp;';
+}
+
+.margin-20 {
+    width: 100%;
+    margin: 20px 0;
+    content:'&nbsp;';
+}
+
+.margin-30 {
+    width: 100%;
+    margin: 30px 0;
+    content:'&nbsp;';
+}
+
+.margin-40 {
+    width: 100%;
+    margin: 40px 0;
+    content:'&nbsp;';
+}
+
+.margin-50 {
+    width: 100%;
+    margin: 50px 0;
+    content:'&nbsp;';
+}
+
+.margin-top-5 {
+    width: 100%;
+    margin-top: 5px;
+    content:'&nbsp;';
+}
+
+.margin-top-10 {
+    width: 100%;
+    margin-top: 10px;
+    content:'&nbsp;';
+}
+
+.margin-top-20 {
+    width: 100%;
+    margin-top: 20px;
+    content:'&nbsp;';
+}
+
+.margin-top-30 {
+    width: 100%;
+    margin-top: 30px;
+    content:'&nbsp;';
+}
+
+.margin-top-40 {
+    width: 100%;
+    margin-top: 40px;
+    content:'&nbsp;';
+}
+
+.margin-top-50 {
+    width: 100%;
+    margin: 50px 0 0 0;
+    content:'&nbsp;';
+}
+
+.margin-bottom-10 {
+    width: 100%;
+    margin: 0 0 10px 0;
+    content:'&nbsp;';
+}
+
+.margin-bottom-20 {
+    width: 100%;
+    margin: 0 0 20px 0;
+    content:'&nbsp;';
+}
+
+.margin-bottom-30 {
+    width: 100%;
+    margin: 0 0 30px 0;
+    content:'&nbsp;';
+}
+
+.margin-bottom-40 {
+    width: 100%;
+    margin: 0 0 40px 0;
+    content:'&nbsp;';
+}
+
+.margin-bottom-50 {
+    width: 100%;
+    margin: 0 0 50px 0;
+    content:'&nbsp;';
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.padding-5 {
+    width: 100%;
+    padding: 5px 0;
+    content:'&nbsp;';
+}
+
+.padding-10 {
+    width: 100%;
+    padding: 10px 0;
+    content:'&nbsp;';
+}
+
+.padding-20 {
+    width: 100%;
+    padding: 20px 0;
+    content:'&nbsp;';
+}
+
+.padding-30 {
+    width: 100%;
+    padding: 30px 0;
+    content:'&nbsp;';
+}
+
+.padding-40 {
+    width: 100%;
+    padding: 40px 0;
+    content:'&nbsp;';
+}
+
+.padding-50 {
+    width: 100%;
+    padding: 50px 0;
+    content:'&nbsp;';
+}
+
+.padding-top-10 {
+    width: 100%;
+    padding-top: 10px;
+    content:'&nbsp;';
+}
+
+.padding-top-20 {
+    width: 100%;
+    padding-top: 20px;
+    content:'&nbsp;';
+}
+
+.padding-top-30 {
+    width: 100%;
+    padding-top: 30px;
+    content:'&nbsp;';
+}
+
+.padding-top-40 {
+    width: 100%;
+    padding-top: 40px;
+    content:'&nbsp;';
+}
+
+.padding-top-50 {
+    width: 100%;
+    padding-top: 50px;
+    content:'&nbsp;';
+}
+
+.padding-bottom-10 {
+    width: 100%;
+    padding-bottom: 10px;
+    content:'&nbsp;';
+}
+
+.padding-bottom-20 {
+    width: 100%;
+    padding-bottom: 20px;
+    content:'&nbsp;';
+}
+
+.padding-bottom-30 {
+    width: 100%;
+    padding-bottom: 30px;
+    content:'&nbsp;';
+}
+
+.padding-bottom-40 {
+    width: 100%;
+    padding-bottom: 40px;
+    content:'&nbsp;';
+}
+
+.padding-bottom-50 {
+    width: 100%;
+    padding-bottom: 50px;
+    content:'&nbsp;';
+}
+
+
+/* ---------------------------------
+fonts
+--------------------------------- */
+.text-bold {
+    font-weight: bold!important
+}
+
+.text-normal {
+    font-weight: normal;
+}
+
+.no-decoration {
+    text-decoration: none!important;
+}
+
+.text-uppercase {
+    text-transform: uppercase;;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.txt-10 {
+    font-size: 10px;
+    line-height: 10px;
+}
+
+.txt-12 {
+    font-size: 12px;
+    line-height: 12px;
+}
+
+.txt-14 {
+    font-size: 14px;
+    line-height: 14px;
+}
+
+.txt-16 {
+    font-size: 16px;
+    line-height: 16px;
+}
+
+.txt-18 {
+    font-size: 18px;
+    line-height: 18px;
+}
+
+.txt-20 {
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.txt-22 {
+    font-size: 22px;
+    line-height: 22px;
+}
+
+.txt-24 {
+    font-size: 24px;
+    line-height: 24px;
+}
+
+.txt-26 {
+    font-size: 26px;
+    line-height: 28px;
+}
+
+/* ---------------------------------
+controll units - only for testing pusposes
+--------------------------------- */
+.red {
+    background: red;
+}
+
+.blue {
+    background: blue;
+}
+
+.green {
+    background: green;
+}
+
+/* ---------------------------------
+visibility
+--------------------------------- */
+.semi-transparent {
+    opacity: 0.5;
+    filter:alpha(opacity=50);
+}
+
+.show {
+    display: block!important;
+}
+
+.hide {
+    display: none!important;
+}
+
+.invisible {
+    visibility: hidden;
+}

@@ -1,0 +1,47 @@
+.create-account-message {
+	font-size: 25px;
+	color: #fff;
+	margin: 8%0 5% 0;
+	text-align: center;
+}
+
+.header-form {
+	padding: 30px;
+	background: #26495d;
+	color:  #fff;
+	font-size: 22px;
+	line-height: 26px;
+}
+
+.create-form {
+	padding: 30px 70px 40px 40px;
+	background: #f6f6f6;
+	margin-bottom: 15px;
+}
+
+.text-form {
+	text-align: left;
+	color: #5f5f5f;
+	font-size: 16px; 
+}
+
+a.later {
+    display: block;
+    float: left;
+    font-size: 22px;
+    margin: 15px 0;
+    padding: 15px 0;
+    text-decoration: underline;
+}
+
+a.later:hover {
+	color: #fff;
+}
+
+.create-form input[type="text"], .create-form input[type="password"] {
+    float: left;
+    color: #244c61;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #a7b4bc;
+}

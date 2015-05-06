@@ -1,0 +1,280 @@
+html {
+    background:  #f6f6f6;
+    overflow-y: scroll;
+}
+
+body{
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    font-size: 16px;
+    color: #3f3f3f;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.2;
+}
+
+.container {
+    max-width: 960px;
+}
+
+/*---Backgrounds---*/
+.default-bg {
+    background: #fff; /*white*/
+}
+
+.primary-bg {
+    background: #244c61;  /*dark blue*/
+    overflow: hidden;
+}
+
+.secondary-bg {
+    background: #25c976;  /*light green*/
+}
+
+.glow-background {
+    background: #53a1c5;
+    width: 100%;
+    min-height: 737px; 
+}
+/*---Colors---*/
+.primary-color {
+    color: #265974; /*blue*/
+}
+
+.secondary-color {
+    color: #25c976; /*light green*/
+}
+
+/*---Headings---*/
+h1 {
+    color: #fff;
+    font-size: 60px;
+}
+
+h2 {
+    font-size: 30px;
+    padding: 15px 0;
+}
+
+h3 {
+    font-size: 24px;
+    padding: 15px 0;
+}
+
+label {
+    display: block;
+    float: left;
+    font-size: 18px;
+    padding: 20px 0 10px;
+    text-transform: uppercase;
+}
+
+label.error {
+    bottom: -20px;
+    color: #FF0000;
+    font-size: 12px;
+    padding: 5px 0 0;
+    position: absolute;
+    text-transform: none;
+}
+
+.login-form label.error {
+    width: 100%;
+    padding: 0;
+    bottom: -10px; 
+}
+
+.default-bg h2, .default-bg h3 {
+    color: #000;
+}
+
+.word-wrap {
+    word-wrap:break-word;
+}
+
+/*---Header---*/
+.header {
+    margin:5px 0;
+    background: #000;
+    height: 90px;
+}
+
+
+/*---Banner---*/
+.banner-glow {
+    background: url(../img/banner-overlay.png) no-repeat center 0 transparent;
+    width: 100%;
+    height: 100%;
+}
+
+.topHeader .contact {
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.topHeader .hour {
+    font-weight: normal;
+    margin-top: 5px;
+}
+
+.topHeader .account {
+    background: url(../img/user-icon.png) no-repeat right center;
+    padding: 0 20px 0 0;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.topHeader .account a {
+    color:  #b1b1b1;
+	text-decoration:none;
+}
+
+.topHeader .account:hover a  {
+	color: #fff;
+}
+
+/*---Menu---*/
+.nav {
+    margin-top: 15px;
+}
+
+.nav-tabs>li a{
+    color:  #fff;
+    background:#265974;
+    text-align: center;
+    font-weight: normal;
+    text-transform: uppercase;
+    border-radius:0;
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus,
+.nav>li>a:hover, .nav>li>a:focus {
+    color: #fff;
+    background-color: #25c976;
+    border: 1px solid transparent;
+}
+
+.nav>li>a {
+    padding: 10px 0;
+    margin-right:10px;
+    font-size: 16px;
+}
+
+/*---Breadcrumb---*/
+#breadcrumb {
+    color: #9d9d9d;
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+/*---Lists---*/
+ul.letter-list {
+    color:  #265974;
+    font-size: 24px;
+    list-style-type: upper-latin;
+    list-style-position:inside;
+    padding: 0 20px 0 0;
+    overflow: hidden;
+}
+
+ul.letter-list li {
+    margin: 20px 0;
+}
+
+
+ul.bullet-list {
+    list-style-type: disc;
+    list-style-position:inside;
+    padding: 0 20px 0 0;
+    overflow: hidden;
+}
+
+ul.bullet-list li {
+    line-height: 30px;
+}
+
+
+/*---Text---*/
+.title {
+    color: #244c61;
+    font-size: 18px;
+    margin-bottom:  5px;
+}
+
+.data {
+    color: #9d9d9d;
+    font-size: 13px;
+    margin: 5px 0;
+}
+
+.secondary-bg .title {
+    font-size: 22px;
+    color: #fff;
+}
+
+.secondary-bg .text {
+    font-size: 18px;
+    color:  #fff;
+}
+
+.highlighted {
+    float: left;
+    width:  100%;
+    background: #265974;
+    font-weight: 22px;
+    color:  #fff;
+    padding: 20px;
+    margin: 10px 0;
+}
+
+.highlighted a {
+    color: #25c976;
+    display: block;
+    text-decoration: none;
+}
+
+.highlighted a:hover {
+    color: #2bdd83;
+}
+
+.highlighted-text {
+    padding-top: 20px;
+    padding-bottom: 20px; 
+}
+
+/*---Content---*/
+.content {
+    border:1px solid #eee;
+}
+
+/*---Images---*/
+.image-container  img {
+    width: 100%;
+    position: relative;
+}
+
+.image-border {
+    border: 10px solid #f6f6f6;
+}
+
+.float-right-foto {
+    float: right;
+    margin: 0 0 20px 10px;
+}
+
+/*--Spacers--*/
+.margin-bottom-30 {
+    margin-bottom: 30px;
+}
+
+.padding-bottom-30 {
+    padding-bottom:  30px;
+}
+
+
+/*---Signature---*/
+.signature {
+    font-size: 15px;
+    color: #3c3c3c;
+}
