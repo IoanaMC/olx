@@ -13,7 +13,7 @@ if (isset($_SESSION['nu'])) { /*daca userul e logat*/
         $newPassw = mysql_real_escape_string($_POST['password']);
         $newPassw2 = mysql_real_escape_string($_POST['confirm_password']);
 
-		$sql = "SELECT id FROM utilizator WHERE nume = '$newUserName'";
+		$sql = "SELECT id_util FROM utilizatori WHERE nume_util = '$newUserName'";
 		$result = mysql_query($sql);
         if ($result != FALSE) {
             $nr_rez = mysql_num_rows($result);
@@ -24,16 +24,16 @@ if (isset($_SESSION['nu'])) { /*daca userul e logat*/
                 $msgdb = 'eroare';
             }
             if ($nr_rez == 0) {
-                $sql = "INSERT INTO utilizator (nume,prenume, email, telefon, parola) VALUES ('$newUserName', '$newUserSurname', '$newUserEmail', '$newUserPhone', '$newPassw')";
+                $sql = "INSERT INTO utilizatori (nume_util, prenume_util, email_util, telefon_util, parola_util) VALUES ('$newUserName', '$newUserSurname', '$newUserEmail', '$newUserPhone', '$newPassw')";
                 $result = mysql_query($sql);
                 if ($result != FALSE) {
-                    $sql_select = "SELECT id,nume FROM utilizator WHERE nume = '$newUserName' AND parola = '$newPassw' LIMIT 1";
+                    $sql_select = "SELECT id_util, nume_util FROM utilizatori WHERE nume_util = '$newUserName' AND parola_util = '$newPassw' LIMIT 1";
                     $result_select = mysql_query($sql_select);
                     if ($result_select != FALSE) {
                         $row = mysql_fetch_assoc($result_select);  
                         if ($row != FALSE) {
-                            $_SESSION['nu'] = $row['id']; /*idul sesiunii pt noul utilizator*/
-                            $_SESSION['nume'] = $row['nume'];
+                            $_SESSION['nu'] = $row['id_util']; /*idul sesiunii pt noul utilizator*/
+                            $_SESSION['nume'] = $row['nume_util'];
                             $myhost  = $_SERVER['HTTP_HOST'];
                             $mysps   = rtrim(dirname($_SERVER['PHP_SELF']), '/\\');
                             $mypage = 'all-news.php';

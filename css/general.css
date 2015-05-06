@@ -78,99 +78,67 @@ spacers
 }
 
 .margin-10 {
-    width: 100%;
     margin: 10px 0;
-    content:'&nbsp;';
 }
 
 .margin-20 {
-    width: 100%;
     margin: 20px 0;
-    content:'&nbsp;';
 }
 
 .margin-30 {
-    width: 100%;
     margin: 30px 0;
-    content:'&nbsp;';
 }
 
 .margin-40 {
-    width: 100%;
     margin: 40px 0;
-    content:'&nbsp;';
 }
 
 .margin-50 {
-    width: 100%;
     margin: 50px 0;
-    content:'&nbsp;';
 }
 
 .margin-top-5 {
-    width: 100%;
     margin-top: 5px;
-    content:'&nbsp;';
 }
 
 .margin-top-10 {
-    width: 100%;
     margin-top: 10px;
-    content:'&nbsp;';
 }
 
 .margin-top-20 {
-    width: 100%;
     margin-top: 20px;
-    content:'&nbsp;';
 }
 
 .margin-top-30 {
-    width: 100%;
     margin-top: 30px;
-    content:'&nbsp;';
 }
 
 .margin-top-40 {
-    width: 100%;
     margin-top: 40px;
-    content:'&nbsp;';
 }
 
 .margin-top-50 {
-    width: 100%;
-    margin: 50px 0 0 0;
-    content:'&nbsp;';
+    margin-top: 50px;
 }
 
 .margin-bottom-10 {
-    width: 100%;
-    margin: 0 0 10px 0;
-    content:'&nbsp;';
+    margin-bottom: 10px;
 }
 
 .margin-bottom-20 {
-    width: 100%;
-    margin: 0 0 20px 0;
-    content:'&nbsp;';
+    margin-bottom: 20px;
 }
 
 .margin-bottom-30 {
-    width: 100%;
-    margin: 0 0 30px 0;
-    content:'&nbsp;';
+    margin-bottom: 30px;
 }
 
 .margin-bottom-40 {
-    width: 100%;
-    margin: 0 0 40px 0;
-    content:'&nbsp;';
+    margin-bottom: 40px;
 }
 
 .margin-bottom-50 {
-    width: 100%;
-    margin: 0 0 50px 0;
-    content:'&nbsp;';
+    margin-bottom: 50px;
 }
 
 .no-padding {
@@ -178,99 +146,67 @@ spacers
 }
 
 .padding-5 {
-    width: 100%;
     padding: 5px 0;
-    content:'&nbsp;';
 }
 
 .padding-10 {
-    width: 100%;
     padding: 10px 0;
-    content:'&nbsp;';
 }
 
 .padding-20 {
-    width: 100%;
     padding: 20px 0;
-    content:'&nbsp;';
 }
 
 .padding-30 {
-    width: 100%;
     padding: 30px 0;
-    content:'&nbsp;';
 }
 
 .padding-40 {
-    width: 100%;
     padding: 40px 0;
-    content:'&nbsp;';
 }
 
 .padding-50 {
-    width: 100%;
     padding: 50px 0;
-    content:'&nbsp;';
 }
 
 .padding-top-10 {
-    width: 100%;
     padding-top: 10px;
-    content:'&nbsp;';
 }
 
 .padding-top-20 {
-    width: 100%;
     padding-top: 20px;
-    content:'&nbsp;';
 }
 
 .padding-top-30 {
-    width: 100%;
     padding-top: 30px;
-    content:'&nbsp;';
 }
 
 .padding-top-40 {
-    width: 100%;
     padding-top: 40px;
-    content:'&nbsp;';
 }
 
 .padding-top-50 {
-    width: 100%;
     padding-top: 50px;
-    content:'&nbsp;';
 }
 
 .padding-bottom-10 {
-    width: 100%;
     padding-bottom: 10px;
-    content:'&nbsp;';
 }
 
 .padding-bottom-20 {
-    width: 100%;
     padding-bottom: 20px;
-    content:'&nbsp;';
 }
 
 .padding-bottom-30 {
-    width: 100%;
     padding-bottom: 30px;
-    content:'&nbsp;';
 }
 
 .padding-bottom-40 {
-    width: 100%;
     padding-bottom: 40px;
-    content:'&nbsp;';
 }
 
 .padding-bottom-50 {
-    width: 100%;
     padding-bottom: 50px;
-    content:'&nbsp;';
 }
 
 

@@ -71,13 +71,13 @@ function uploadFile(){
 }
 
 $atasament=uploadFile();
-$query="INSERT INTO anunturi(titlu, descriere, data, imagine, id_oras, id_judet) VALUES ('$titlu', '$descriere', '$today', '$atasament', '$oras', '$judet')";	
+$query="INSERT INTO anunturi(titlu_anunt, descriere_anunt, data_anunt, imagine_anunt, id_oras_anunt, id_judet_anunt) VALUES ('$titlu', '$descriere', '$today', '$atasament', '$oras', '$judet')";	
 $a= mysql_query($query);
 
-$nou="SELECT max(id) FROM anunturi";
+$nou="SELECT max(id_anunt) FROM anunturi";
 $rez_temp=mysql_query($nou);
 $rez= mysql_fetch_row($rez_temp);
-$query2="INSERT INTO referinte(id_utilizator,id_categorie,id_anunt) VALUES ($idu,$categorii,$rez[0])";
+$query2="INSERT INTO referinte(id_utilizator_ref,id_categorie_ref,id_anunt_ref) VALUES ($idu,$categorii,$rez[0])";
 $b=mysql_query($query2);
 
 if ($a===true && $b===TRUE) {

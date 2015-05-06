@@ -10,14 +10,14 @@ if (!(isset($_SESSION['nu']))) { /*daca nu e deja logat*/
 			$numeu = mysql_real_escape_string($_POST['NumeUser']);
 			$parolau = mysql_real_escape_string($_POST['Parola']);
 			
-			$sql = "SELECT id,nume FROM utilizator WHERE nume = '$numeu' AND parola = '$parolau'";
+			$sql = "SELECT id_util, nume_util FROM utilizatori WHERE nume_util = '$numeu' AND parola_util = '$parolau'";
 			$result = mysql_query($sql);
 			if ($result != FALSE) {
 				if (mysql_num_rows($result) == 1) {
 					$row = mysql_fetch_assoc($result);
 					if ($row != FALSE) {
-						$_SESSION['nu']= $row['id'];
-						$_SESSION['nume'] = $row['nume'];
+						$_SESSION['nu']= $row['id_util'];
+						$_SESSION['nume'] = $row['nume_util'];
 						
 						$myhost  = $_SERVER['HTTP_HOST'];
 						$mysps   = rtrim(dirname($_SERVER['PHP_SELF']), '/\\');

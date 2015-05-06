@@ -18,43 +18,40 @@
 							<?php } ?>
                         </div>
 						<div class="col-sm-12">
-							<div class="col-sm-8">
-								<?php
-								if (!(isset($_SESSION['nu']))) {
-									echo '<span class="text-danger">Acces interzis!</span>';
-								} else {
-									//selectam tot din tabelul Anunturi
-									$cerereSQL = 'SELECT a.id, a.titlu, a.descriere, a.data, a.imagine, u.nume, c.titlu FROM anunturi a INNER JOIN referinte r ON a.id = r.id_anunt INNER JOIN utilizator u ON r.id_utilizator = u.id INNER JOIN categorie c on c.id_categorie = r.id_categorie';
-									$rezultat = mysql_query($cerereSQL);
-									if ($rezultat != FALSE) {
-										while($rand = mysql_fetch_array($rezultat)) {
-											?>
-											<div class="col-sm-12 margin-bottom-10 secondary-bg no-padding">
-												<div class="col-sm-12 padding-10">
-													<div class="col-sm-12">Data: <?php echo $rand['data'] ?></div>
-													<div class="col-sm-12">Nume: <?php echo $rand['nume'] ?></div>
-													<div class="col-sm-12">Nume articol: <?php echo $rand[2] ?></div>
-													<div class="col-sm-12">Categorii: <?php echo $rand['titlu'] ?></div>
-													<div class="col-sm-12">Descriere: <?php echo $rand['descriere'] ?></div>
-													<div class="col-sm-12">Atasament: 
-														<div><img src='<?php echo $rand['imagine']?>' height="100"></div>
-													</div>
+							<?php
+							if (!(isset($_SESSION['nu']))) {
+								echo '<span class="text-danger">Acces interzis!</span>';
+							} else {
+								//selectam tot din tabelul Anunturi
+								$cerereSQL = 'SELECT id_anunt, titlu_anunt, descriere_anunt, data_anunt, imagine_anunt, nume_util, titlu_categorie FROM anunturi INNER JOIN referinte ON id_anunt = id_anunt_ref INNER JOIN utilizatori ON id_utilizator_ref = id_util INNER JOIN categorii on id_categorie = id_categorie_ref';
+								$rezultat = mysql_query($cerereSQL);
+								if ($rezultat != FALSE) {
+									while($rand = mysql_fetch_array($rezultat)) {
+										?>
+										<div class="col-xs-12 col-sm-6 col-md-3">
+						                    <div class="news">
+						                        <div class="news-image">
+						                           <img src='<?php echo $rand['imagine_anunt']?>' height="100">
+						                        </div>
+						                        <div class="news-desc">
+													<div class="col-sm-12">Data: <?php echo $rand['data_anunt'] ?></div>
+													<div class="col-sm-12">Nume articol: <?php echo $rand['titlu_anunt'] ?></div>
+													<div class="col-sm-12">Categorii: <?php echo $rand['titlu_categorie'] ?></div>
+													<div class="col-sm-12">Descriere: <?php echo $rand['descriere_anunt'] ?></div>
 													<div>
-														<a href="edit-news.php?id=<?php echo $rand['id'] ?>" class="btn btn-primary">Edit</a>
+														<a href="edit-news.php?id=<?php echo $rand['id_anunt'] ?>" class="btn btn-primary">Edit</a>
 													</div>
-												</div>
-											</div>
-										<?php
-										}
-									} else {
-											echo 'Error';
+						                        </div>
+						                        <a href="#" class="more-details">Detalii</a>
+						                    </div>
+						                </div>
+									<?php
 									}
+								} else {
+										echo 'Error';
 								}
-								?>
-							</div>
-							<div class="col-sm-4 text-right">
-								<a href="my-news.php">Anunturile mele</div>
-							</div>
+							}
+							?>
 						</div>
 					</div>
 				</div>

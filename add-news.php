@@ -60,10 +60,10 @@
 										<select name="selectie">
 											<!-- incarcam numele categoriilor existente in DB -->
 											<?php
-												$query = "SELECT titlu, id_categorie FROM categorie";
+												$query = "SELECT titlu_categorie, id_categorie FROM categorii";
 												$result = mysql_query($query);
 												while ($row=mysql_fetch_array($result)){
-													echo '<option value="'.$row["id_categorie"].'">'.$row["titlu"].'</option>';	
+													echo '<option value="'.$row["id_categorie"].'">'.$row["titlu_categorie"].'</option>';	
 											}
 											?>
 										</select>
@@ -75,10 +75,10 @@
 										<select name="selectie_judet">
 											<!-- incarcam numele judetelor existente in DB -->
 											<?php
-												$queryJudet = "SELECT id, nume_judet FROM judete";
+												$queryJudet = "SELECT id_judet, nume_judet FROM judete";
 												$resultJudet = mysql_query($queryJudet);
 												while ($rowJudet=mysql_fetch_array($resultJudet)){
-													echo '<option value="'.$rowJudet["id"].'">'.$rowJudet["nume_judet"].'</option>';	
+													echo '<option value="'.$rowJudet["id_judet"].'">'.$rowJudet["nume_judet"].'</option>';	
 											}
 											?>
 										</select>
@@ -90,10 +90,10 @@
 										<select name="selectie_oras">
 											<!-- incarcam numele judetelor existente in DB -->
 											<?php
-												$queryJudet = "SELECT id, nume_oras FROM orase";
+												$queryJudet = "SELECT id_oras, nume_oras FROM orase";
 												$resultJudet = mysql_query($queryJudet);
 												while ($rowJudet=mysql_fetch_array($resultJudet)){
-													echo '<option value="'.$rowJudet["id"].'">'.$rowJudet["nume_oras"].'</option>';	
+													echo '<option value="'.$rowJudet["id_oras"].'">'.$rowJudet["nume_oras"].'</option>';	
 											}
 											?>
 										</select>
