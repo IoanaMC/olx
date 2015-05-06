@@ -1,0 +1,71 @@
+/*---Info Box---*/
+.info-box {
+    width:60%;
+    float: right;
+    padding: 0 30px;
+    font-size:  16px;
+    line-height:  18px;
+    text-align: center;
+    color: #fff;
+}
+
+.info-title {
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #25c976;
+    padding-bottom: 20px;
+}
+
+
+/*---User Box---*/
+.user-box {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.user-box .title {
+    margin-bottom: 30px;
+}
+
+.user-box .user {
+    position: absolute;
+    top: -1px;
+    right: 0;
+}
+
+
+/*---Medicine Box---*/
+.items-list {
+    border: 1px solid #25c976;
+}
+.item-box {
+    background:  #fff;
+    border-bottom: 1px solid #e0e3e0;
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 20px;
+    margin: 0 5px;
+}
+
+.item-box.last {
+    border-bottom: none;
+}
+
+.item-box .description {
+    padding: 10px 0;
+}
+
+.item-box .old-price {
+    color: #3f3f3f;
+    text-decoration: line-through;
+}
+
+.item-box .new-price {
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 24px;
+    color: #25c976;
+}

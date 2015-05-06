@@ -1,60 +1,51 @@
 /*---Buttons---*/
 .btn {
-    text-transform: uppercase;
-    text-align: center;	
-    border-radius: 0;
-    border: none;
-    margin: 15px 0;
-}
+  text-transform: uppercase;
+  text-align: center;
+  border-radius: 0;
+  border: none;
+  margin: 15px 0; }
 
 /*---Size---*/
 .btn-small {
-    font-size: 18px;
-    padding: 15px 25px;
-}
+  font-size: 18px;
+  padding: 15px 25px; }
 
 .btn-large {
-    font-size: 22px;
-    padding: 15px 30px;
-}
-
+  font-size: 22px;
+  padding: 15px 30px; }
 
 /*---Color---*/
 .btn-default-color {
-    color: #fff;
-}
+  color: #fff; }
 
 .btn-primary-color {
-    color: #244c61; /*dark blue*/
-}
+  color: #244c61;
+  /*dark blue*/ }
 
 .btn-secondary-color {
-    color: #25c976; /*light green*/
-}
-
+  color: #25c976;
+  /*light green*/ }
 
 /*---Background---*/
 .btn-default-bg {
-    background: #fff;
-}
+  background: #fff; }
 
 .btn-primary-bg {
-    background: #26495d; /*dark blue*/
-}
+  background: #26495d;
+  /*dark blue*/ }
 
 .btn-secondary-bg {
-    background: #25c976; /*light green*/
-}
-
+  background: #25c976;
+  /*light green*/ }
 
 input.btn-default-bg:hover {
-    color: #244c61;
-}
+  color: #244c61; }
 
 input.btn-primary-bg:hover {
-    color: #fff; 
-}
+  color: #fff; }
 
 input.btn-secondary-bg:hover {
-    color: #fff; 
-}
+  color: #fff; }
+
+/*# sourceMappingURL=buttons.css.map */
