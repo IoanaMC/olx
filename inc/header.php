@@ -20,7 +20,7 @@
 					<div class="row col-sm-12">
 						<div class="col-sm-1"></div>
 						<div class="col-sm-11">
-							<h1 class="text-bold">Anunturi Vanzari</h1>
+							<h1 class="text-bold text-center">Anunturi Vanzari</h1>
 						</div>
 					</div>
 				</div>

@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACC,wBAAY;EACX,KAAK,EAAE,IAAI;EACX,YAAY,EAAE,IAAI;EAClB,SAAS,EAAE,KAAK;EAChB,KAAK,EAAE,IAAI;EAEX,4BAAI;IACH,KAAK,EAAE,IAAI;AAIb,uBAAW;EACV,SAAS,EAAE,IAAI;EACf,UAAU,EAAE,MAAM",
+"sources": ["../scss/single-news.scss"],
+"names": [],
+"file": "single-news.css"
+}

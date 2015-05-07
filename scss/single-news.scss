@@ -1,0 +1,17 @@
+.single-news {
+	.news-image {
+		float: left;
+		margin-right: 20px;
+		max-width: 150px;
+		width: 100%;
+
+		img {
+			width: 100%;
+		}
+	}
+
+	.news-date {
+		font-size: 10px;
+		font-style: italic;
+	}
+}

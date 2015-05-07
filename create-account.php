@@ -85,8 +85,8 @@ if (isset($_SESSION['nu'])) { /*daca userul e logat*/
                             echo '</div>';
                         }
                     ?>
-					<span class="text-form no-padding col-sm-12">Completati campurile :</span>     
-                    <form action="create-account.php" method="post" name="newLogin" id="form-create-account">
+					<div class="text-form col-sm-12">Completati campurile :</div>     
+                    <form action="create-account.php" method="post" name="newLogin" id="form-create-account" class="clearfix">
                         <div class="col-sm-12">
                             <label for="user">Nume: </label>
                             <input type="text" placeholder="Nume" name="name" id="name" class="col-sm-12" required="" data-name="Introduceti un nume" data-minLen="Minim 4 caractere"/>
