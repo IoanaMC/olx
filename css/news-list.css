@@ -12,13 +12,21 @@
     border-bottom: 1px solid #000000;
     padding-bottom: 20px;
     position: relative; }
-    .news .news-image img {
-      width: 100%;
-      height: auto; }
+    .news .news-image a {
+      display: block; }
+      .news .news-image a img {
+        display: block;
+        width: 100%;
+        height: auto; }
+      .news .news-image a:hover {
+        background: #000000;
+        opacity: 0.7; }
     .news .news-image .news-category {
       position: absolute;
       bottom: 0;
-      right: 0; }
+      right: 0;
+      font-size: 12px;
+      margin-bottom: 2px; }
   .news .news-desc {
     padding-top: 10px;
     text-align: left;

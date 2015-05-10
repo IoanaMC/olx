@@ -31,8 +31,10 @@
 										<div class="col-xs-12 col-sm-6 col-md-3">
 						                    <div class="news">
 						                        <div class="news-image">
-						                        	<img src='<?php echo $rand['imagine_anunt']?>' height="100">
-													<div class="news-category">Categorii: <?php echo $rand['titlu_categorie'] ?></div>
+						                        	<a href="single-news.php?id=<?php echo $rand['id_anunt'] ?>">
+						                        		<img src='<?php echo $rand['imagine_anunt']?>' height="100">
+						                        	</a>
+													<div class="news-category">Sectiune: <?php echo $rand['titlu_categorie'] ?></div>
 						                        </div>
 						                        <div class="news-desc">
 													<div class="news-date">Data: <?php echo $rand['data_anunt'] ?></div>
