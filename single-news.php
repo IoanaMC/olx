@@ -32,14 +32,14 @@
 				                        <div class="news-desc">
 					                        <div class="news-image">
 					                        	<img src='<?php echo $rand['imagine_anunt']?>' height="100">
+												<a href="edit-news.php?id=<?php echo $rand['id_anunt'] ?>" class="edit-btn"><i class="fa fa-pencil"></i></a>
 					                        </div>
-											<div class="news-date">Data: <?php echo $rand['data_anunt'] ?></div>
-											<div class="user-name">Autor: <?php echo $rand['nume_util'] ?></div>
-											<div class="news-category">Categorii: <?php echo $rand['titlu_categorie'] ?></div>
+											<div class="news-category">Sectiune: <?php echo $rand['titlu_categorie'] ?></div>
+											<span class="news-date">Data: <?php echo $rand['data_anunt'] ?></span>
+											<span class="user-name">Autor: <?php echo $rand['nume_util'] ?></span>
 											<div class="news-title"><?php echo $rand['titlu_anunt'] ?></div>
-											<div class="col-sm-12"><?php echo $rand['descriere_anunt'] ?></div>
 											<div class="news-location"><?php echo $rand['nume_oras'] ?>, <?php echo $rand['nume_judet'] ?></div>
-											<a href="edit-news.php?id=<?php echo $rand['id_anunt'] ?>" class="edit-btn"><i class="fa fa-pencil"></i></a>
+											<div class="news-desc"><?php echo $rand['descriere_anunt'] ?></div>
 				                        </div>
 				                        <a href="all-news.php" class="more-details"><i class="fa fa-chevron-circle-left"></i></a>
 				                    </div>
