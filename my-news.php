@@ -50,7 +50,7 @@
 									<?php
 									}
 								} else {
-										echo 'Error';
+									echo 'Error';
 								}
 							}
 							?>

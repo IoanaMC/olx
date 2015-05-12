@@ -30,13 +30,13 @@
 								?>
 				                    <div class="single-news">
 				                        <div class="news-desc">
-					                        <div class="news-image">
-					                        	<img src='<?php echo $rand['imagine_anunt']?>' height="100">
-												<a href="edit-news.php?id=<?php echo $rand['id_anunt'] ?>" class="edit-btn"><i class="fa fa-pencil"></i></a>
-					                        </div>
-											<div class="news-category">Sectiune: <?php echo $rand['titlu_categorie'] ?></div>
 											<span class="news-date">Data: <?php echo $rand['data_anunt'] ?></span>
 											<span class="user-name">Autor: <?php echo $rand['nume_util'] ?></span>
+					                        <div class="news-image">
+					                        	<img src='<?php echo $rand['imagine_anunt']?>' height="100">
+												<a href="edit-news.php?id=<?php echo $_GET["id"] ?>" class="edit-btn"><i class="fa fa-pencil"></i></a>
+					                        </div>
+											<div class="news-category">Sectiune: <?php echo $rand['titlu_categorie'] ?></div>
 											<div class="news-title"><?php echo $rand['titlu_anunt'] ?></div>
 											<div class="news-location"><?php echo $rand['nume_oras'] ?>, <?php echo $rand['nume_judet'] ?></div>
 											<div class="news-desc"><?php echo $rand['descriere_anunt'] ?></div>

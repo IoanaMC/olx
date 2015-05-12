@@ -22,9 +22,8 @@
 							if (!(isset($_SESSION['nu']))) {
 								echo '<span class="text-danger">Acces interzis!</span>';
 							} else {
-								echo $_GET["id"];
 								$_SESSION['idn'] = $_GET["id"];
-								$cerereEditNews = 'SELECT titlu_anunt, descriere_anunt, data_anunt, imagine_anunt, nume_util, titlu_categorie, id_oras, nume_oras, id_judet, nume_judet FROM anunturi INNER JOIN referinte ON id_anunt = id_anunt_ref INNER JOIN utilizatori ON id_utilizator_ref = id_util INNER JOIN categorii on id_categorie = id_categorie_ref INNER JOIN orase ON id_oras = id_oras_anunt INNER JOIN judete ON id_judet = id_judet_anunt WHERE id_anunt='.$_GET["id"];
+								$cerereEditNews = 'SELECT titlu_anunt, descriere_anunt, data_anunt, imagine_anunt, nume_util, id_categorie, titlu_categorie, id_oras, nume_oras, id_judet, nume_judet FROM anunturi INNER JOIN referinte ON id_anunt = id_anunt_ref INNER JOIN utilizatori ON id_utilizator_ref = id_util INNER JOIN categorii on id_categorie = id_categorie_ref INNER JOIN orase ON id_oras = id_oras_anunt INNER JOIN judete ON id_judet = id_judet_anunt WHERE id_anunt='.$_GET["id"];
 								$result = mysql_query($cerereEditNews);
 								if ($result != FALSE) {
 									//if (mysql_num_rows($result) == 1) {
@@ -46,7 +45,12 @@
 														$query = "SELECT titlu_categorie, id_categorie FROM categorii";
 														$result = mysql_query($query);
 														while ($row=mysql_fetch_array($result)){
-															echo '<option value="'.$row["id_categorie"].'">'.$row["titlu_categorie"].'</option>';	
+															if($row["id_categorie"] == $rand['id_categorie']) {
+																$opt = "selected";
+															} else {
+																$opt = "";
+															}
+															echo '<option value="'.$row["id_categorie"].'" '.$opt.'>'.$row["titlu_categorie"].'</option>';	
 													}
 													?>
 												</select>
@@ -61,7 +65,12 @@
 														$queryJudet = "SELECT id_judet, nume_judet FROM judete";
 														$resultJudet = mysql_query($queryJudet);
 														while ($rowJudet=mysql_fetch_array($resultJudet)){
-															echo '<option value="'.$rowJudet["id_judet"].'">'.$rowJudet["nume_judet"].'</option>';	
+															if($rowJudet["id_judet"] == $rand['id_judet']) {
+																$opt = "selected";
+															} else {
+																$opt = "";
+															}
+															echo '<option value="'.$rowJudet["id_judet"].'" '.$opt.'>'.$rowJudet["nume_judet"].'</option>';	
 													}
 													?>
 												</select>
@@ -76,9 +85,13 @@
 														$queryOras = "SELECT id_oras, nume_oras FROM orase";
 														$resultOras = mysql_query($queryOras);
 														while ($rowOras=mysql_fetch_array($resultOras)){
-															// echo "string";
-															// if($rowOras["id_oras"] == $rand['id_oras']) echo " selected";
-															echo '<option value="'.$rowOras["id_oras"].'">'.$rowOras["nume_oras"].'</option>';	
+															if($rowOras["id_oras"] == $rand['id_oras']) {
+																$opt = "selected";
+															} else {
+																$opt = "";
+															}
+
+															echo '<option value="'.$rowOras["id_oras"].'" '.$opt.'>'.$rowOras["nume_oras"].'</option>';	
 													}
 													?>
 												</select>
