@@ -91,6 +91,10 @@ label.error {
     word-wrap:break-word;
 }
 
+.hide-desktop {
+    display: none;
+}
+
 /*---Header---*/
 .header {
     margin:5px 0;

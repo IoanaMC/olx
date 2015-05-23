@@ -17,7 +17,7 @@
                             <h3>Buna, <?php echo $_SESSION['nume'] ?></h3>
 							<?php } ?>
                         </div>
-						<div id="news-list" class="col-sm-12">
+						<div id="news-list" class="col-sm-12 add-box">
 							<?php
 							if (!(isset($_SESSION['nu']))) {
 								echo '<span class="text-danger">Acces interzis!</span>';

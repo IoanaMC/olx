@@ -49,7 +49,7 @@ if (!(isset($_SESSION['nu']))) { /*daca nu e deja logat*/
 			<div class="header-form">
 				<strong>Intra</strong> <span class="secondary-color">in cont</span>
 			</div>
-			<div class="create-form col-sm-12 inline-block">
+			<div class="create-form col-xs-12 inline-block">
 				<?php
 					if (isset($_POST['btnLogin'])) {
 						echo '<span class="errmsg">';
@@ -62,7 +62,7 @@ if (!(isset($_SESSION['nu']))) { /*daca nu e deja logat*/
 						echo '</span>';
 					}
 				?>
-				<div class="login-form col-sm-12">
+				<div class="login-form col-xs-12">
 					<form action="login.php" method="post" name="userLogin" id="form-login">
 						<div class="col-sm-12">
 							<label for="NumeUser">Nume:</label>
@@ -77,12 +77,14 @@ if (!(isset($_SESSION['nu']))) { /*daca nu e deja logat*/
 						</div>
 					</form>
 				</div>
-				<div class="col-sm-12 text-right">
-					<a href="create-account.php" class="secondary-color"><b>Creaza un cont nou</b></a>
+				<div class="col-xs-12 text-right">
+                    <div class="col-xs-12">
+						<a href="create-account.php" class="secondary-color"><b>Creaza un cont nou</b></a>
+					</div>
 				</div>
 			</div>
 		</div>
-		<div class="col-sm-1"></div>
+		<div class="col-xs-1"></div>
 	</div>
 </div>
 <?php
