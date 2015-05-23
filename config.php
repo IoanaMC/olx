@@ -9,7 +9,7 @@ error_reporting(E_ALL ^ E_DEPRECATED);
  $AdresaBazaDate = "localhost";
  $UtilizatorBazaDate = "root";
  $ParolaBazaDate = "";
- $NumeBazaDate = "magazin";
+ $NumeBazaDate = "anunturi_online";
 
 $conexiune = mysql_connect($AdresaBazaDate,$UtilizatorBazaDate,$ParolaBazaDate) or die("Nu ma pot conecta la MySQL!");
 mysql_select_db($NumeBazaDate, $conexiune) or die("Nu gasesc baza de date");

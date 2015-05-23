@@ -5,7 +5,7 @@
         <div class="container">
             <div class="row">
                 <?php include('inc/menu.php'); ?>
-                <div class="col-sm-12 default-bg padding-bottom-30">
+                <div class="col-sm-12 default-bg padding-bottom-30 cont-style">
                     <div id="breadcrumb" class="col-sm-12 margin-20">
                         ACASA / Produsele mele
                     </div>
@@ -40,9 +40,10 @@
 													<div class="news-date">Data: <?php echo $rand['data_anunt'] ?></div>
 													<div class="user-name">Autor: <?php echo $rand['nume_util'] ?></div>
 													<div class="news-title"><?php echo $rand['titlu_anunt'] ?></div>
-													<div class="col-sm-12"><?php echo $rand['descriere_anunt'] ?></div>
+													<div class="news-short-desc col-sm-12"><?php echo $rand['descriere_anunt'] ?></div>
 													<div class="news-location"><?php echo $rand['nume_oras'] ?>, <?php echo $rand['nume_judet'] ?></div>
 													<a href="edit-news.php?id=<?php echo $rand['id_anunt'] ?>" class="edit-btn"><i class="fa fa-pencil"></i></a>
+													<a href="delete-news.php?id=<?php echo $rand['id_anunt'] ?>" class="delete-btn"><i class="fa fa-trash-o"></i></a>
 						                        </div>
 						                        <a href="single-news.php?id=<?php echo $rand['id_anunt'] ?>" class="more-details"><i class="fa fa-chevron-circle-right"></i></a>
 						                    </div>

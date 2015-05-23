@@ -22,14 +22,23 @@
 /*---Color---*/
 .btn-default-color {
     color: #fff;
+    &:hover {
+        color: #fff;
+    }
 }
 
 .btn-primary-color {
     color: #244c61; /*dark blue*/
+    &:hover {
+        color: #244c61;
+    }
 }
 
 .btn-secondary-color {
     color: #25c976; /*light green*/
+    &:hover {
+        color: #25c976;
+    }
 }
 
 

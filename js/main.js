@@ -1,5 +1,4 @@
-$(window).load(function() {
- 
+function validation() {
   $("#form-insert").validate({
     rules: {
       titlu : {
@@ -9,12 +8,12 @@ $(window).load(function() {
       atasament: {
         required: true
       },
-	    selectie: {
-  		  required: true
-  	  },
-  	  descriere: {
-  	    required: true
-  	  }
+      selectie: {
+        required: true
+      },
+      descriere: {
+        required: true
+      }
     },
     messages: {
       titlu: {
@@ -22,14 +21,14 @@ $(window).load(function() {
         minlength: "Titlul trebuie sa aiba minim 2 caractere"
       },
       atasament: {
-		    required: "Incarcati un fisier"
-	    },
-  	  selectie: {
-  		  required: "Selectati o categorie"
-  	  },
-  	  descriere: {
-  		  required: "Introduceti o descriere"
-  	  }
+        required: "Incarcati un fisier"
+      },
+      selectie: {
+        required: "Selectati o categorie"
+      },
+      descriere: {
+        required: "Introduceti o descriere"
+      }
     }
   }); 
   
@@ -150,13 +149,25 @@ $(window).load(function() {
       }
     }
   }); 
+}
   
-  /*flexslider*/
+function flexsliderHP() {
   $('.flexslider').flexslider({
     animation: "slide"
   });
+} /*flexslider*/
 
-});
+function hpContainer() {
+  var heightW = $(window).height();
+  var widthW = $(window).width();
+  $('.hp-container').css({'height': heightW, 'width': widthW});
+} /*size for hp container*/
 
 $(document).ready(function(){
-})
+  flexsliderHP();
+  hpContainer();
+});
+
+$(window).load(function() {
+  validation();
+});

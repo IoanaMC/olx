@@ -5,7 +5,7 @@
         <div class="container">
             <div class="row">
                 <?php include('inc/menu.php'); ?>
-                <div class="col-sm-12 default-bg padding-bottom-30">
+                <div class="col-sm-12 default-bg padding-bottom-30 cont-style">
                     <div id="breadcrumb" class="col-sm-12 margin-20">
                         ACASA / Adauga Produse
                     </div>
@@ -40,7 +40,7 @@
 								echo '</p>';
 							}
 						?>
-						<div class="contact-box col-sm-12">
+						<div class="add-box col-sm-12">
 							<form action="insert-news.php" method="post" enctype="multipart/form-data" id="form-insert">
 								<div class="col-sm-12 margin-bottom-20">
 									<div class="col-sm-3">Titlu:</div>

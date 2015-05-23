@@ -5,7 +5,7 @@
         <div class="container">
             <div class="row">
                 <?php include('inc/menu.php'); ?>
-                <div class="col-sm-12 default-bg padding-bottom-30 clearfix">
+                <div class="col-sm-12 default-bg padding-bottom-30 clearfix cont-style">
                     <div id="breadcrumb" class="col-sm-12 margin-20">
                         ACASA / Editare anunt
                     </div>

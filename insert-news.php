@@ -11,7 +11,7 @@ $today = date('j-m-y');
 
 function uploadFile(){
 	//Definim un array cu tipurile de fisiere suportate (jpg,png,bmp)
-	$allowed_filetypes =array('.jpg','.png','.JPG');
+	$allowed_filetypes =array('.jpg','.png','.JPG', '.PNG`');
 
 	//Marimea maxima a unui fisier (1mb =1048576)
 	$max_filesize= 1048576;

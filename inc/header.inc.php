@@ -14,6 +14,7 @@
     <link href="css/reset.css" rel="stylesheet">
     <link href="css/general.css" rel="stylesheet">
     <link href="css/base.css" rel="stylesheet">
+    <link href="css/all-general.css" rel="stylesheet">
     <link href="css/buttons.css" rel="stylesheet">
     <link href="css/account.css" rel="stylesheet">
     <link href="css/news-list.css" rel="stylesheet">

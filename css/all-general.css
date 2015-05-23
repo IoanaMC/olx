@@ -1,0 +1,11 @@
+.cont-style {
+  border-radius: 0 0 50px 50px;
+  -webkit-border-radius: 0 0 50px 50px;
+  -moz-border-radius: 0 0 50px 50px;
+  border: 1px solid #ccc;
+  box-shadow: 0 7px 10px #ccc;
+  -webkit-box-shadow: 0 7px 10px #ccc;
+  -moz-box-shadow: 0 7px 10px #ccc;
+  overflow: hidden; }
+
+/*# sourceMappingURL=all-general.css.map */

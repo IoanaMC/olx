@@ -5,7 +5,7 @@
         <div class="container">
             <div class="row">
                 <?php include('inc/menu.php'); ?>
-                <div class="col-sm-12 default-bg padding-bottom-30">
+                <div class="col-sm-12 default-bg padding-bottom-30 cont-style">
                     <div class="col-sm-12 padding-top-20">
 						<div class="flexslider">
 						  <ul class="slides">
