@@ -39,7 +39,7 @@ if (!(isset($_SESSION['nu']))) { /*daca nu e deja logat*/
 	}
 ?>
 
-<div class="col-sm-12 glow-background">
+<div class="col-xs-12 glow-background">
 	<div class="container">
 		<div class="create-account-message">
 	        Pentru a adauga anunturi,<span class="primary-color">va rugam sa va autentificati </span>
@@ -54,25 +54,25 @@ if (!(isset($_SESSION['nu']))) { /*daca nu e deja logat*/
 					if (isset($_POST['btnLogin'])) {
 						echo '<span class="errmsg">';
 						if (isset($msgerror)) {
-							echo '<div class="col-sm-12 margin-top-10"><p class="text-danger">Datele introduse nu sunt corecte!</p></div>';
+							echo '<div class="col-xs-12 margin-top-10"><p class="text-danger">Datele introduse nu sunt corecte!</p></div>';
 						}
 						if (isset($msgdb)) {
-							echo '<div class="col-sm-12 margin-top-10"><p class="text-danger">Datorita unor probleme tehnice, continutul nu se poate afisa. Va rugam incercaţi mai tarziu.</p></div>';
+							echo '<div class="col-xs-12 margin-top-10"><p class="text-danger">Datorita unor probleme tehnice, continutul nu se poate afisa. Va rugam incercaţi mai tarziu.</p></div>';
 						}
 						echo '</span>';
 					}
 				?>
 				<div class="login-form col-xs-12">
 					<form action="login.php" method="post" name="userLogin" id="form-login">
-						<div class="col-sm-12">
+						<div class="col-xs-12">
 							<label for="NumeUser">Nume:</label>
 							<input name="NumeUser" type="text" id="NumeUser" class="col-sm-9 login-input"/>
 						</div>
-						<div class="col-sm-12">
+						<div class="col-xs-12">
 							<label for="Parola">Parola:</label>
 							<input name="Parola" type="password" id="Parola" class="col-sm-9 login-input"/>
 						</div>
-						<div class="col-sm-12">
+						<div class="col-xs-12">
 							<input type="submit" name="btnLogin" value="Intra in cont" class="btn btn-small btn-default-color btn-primary-bg float-right"/>
 						</div>
 					</form>

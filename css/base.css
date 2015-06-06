@@ -80,7 +80,7 @@ label.error {
 .login-form label.error {
     width: 100%;
     padding: 0;
-    bottom: -10px; 
+    bottom: -15px;
 }
 
 .default-bg h2, .default-bg h3 {

@@ -1,12 +1,12 @@
 <?php include('inc/header.inc.php'); ?>
 <?php include('inc/header.php'); ?>
 
-    <div class="col-sm-12">
+    <div class="col-xs-12">
         <div class="container">
             <div class="row">
                 <?php include('inc/menu.php'); ?>
-                <div class="col-sm-12 default-bg padding-bottom-30 cont-style">
-                    <div class="col-sm-12 padding-top-20">
+                <div class="col-xs-12 default-bg padding-bottom-30 cont-style">
+                    <div class="col-xs-12 padding-top-20">
 						<div class="flexslider">
 						  <ul class="slides">
 							<li>

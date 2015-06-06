@@ -2,7 +2,7 @@
 	require_once('config.php');
 ?>
 
-<div class="col-sm-12">
+<div class="col-xs-12">
 	<div class="row">
 		<div class="primary-bg topHeader">
 			<div class="banner-glow padding-5">
@@ -17,7 +17,7 @@
 							<div class="col-sm-2 text-right account"><a href="logout.php">Iesire</a></div>
 						<?php } ?>
 					</div>
-					<div class="row col-sm-12">
+					<div class="row col-xs-12">
 						<div class="col-sm-1"></div>
 						<div class="col-sm-11">
 							<h1 class="text-bold text-center">Anunturi Vanzari</h1>

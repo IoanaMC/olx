@@ -1,23 +1,23 @@
 <?php include('inc/header.inc.php'); ?>
 <?php include('inc/header.php'); ?>
 
-    <div class="col-sm-12">
+    <div class="col-xs-12">
         <div class="container">
             <div class="row">
                 <?php include('inc/menu.php'); ?>
-                <div class="col-sm-12 default-bg padding-bottom-30 clearfix cont-style">
-                    <div id="breadcrumb" class="col-sm-12 margin-20">
+                <div class="col-xs-12 default-bg padding-bottom-30 clearfix cont-style">
+                    <div id="breadcrumb" class="col-xs-12 margin-20">
                         ACASA / Editare anunt
                     </div>
-                    <div class="col-sm-12">
-                        <div class="col-sm-12">
+                    <div class="col-xs-12">
+                        <div class="col-xs-12">
 							<?php
 								if (isset($_SESSION['nu'])) {
 							?>
                             <h3>Buna, <?php echo $_SESSION['nume'] ?></h3>
 							<?php } ?>
                         </div>
-						<div id="news-list" class="col-sm-12 add-box">
+						<div id="news-list" class="col-xs-12 add-box">
 							<?php
 							if (!(isset($_SESSION['nu']))) {
 								echo '<span class="text-danger">Acces interzis!</span>';
@@ -30,13 +30,13 @@
 										$rand = mysql_fetch_array($result);
 								?>
 									<form action="update-news.php" method="post" enctype="multipart/form-data" id="form-insert">
-										<div class="col-sm-12 margin-bottom-20">
+										<div class="col-xs-12 margin-bottom-20">
 											<div class="col-sm-3">Titlu:</div>
 											<div class="col-sm-7">
 												<input type="text" name="titlu" value=<?php echo $rand['titlu_anunt'] ?>>
 											</div>
 										</div>
-										<div class="col-sm-12 margin-bottom-20">
+										<div class="col-xs-12 margin-bottom-20">
 											<div class="col-sm-3">Categorie:</div>
 											<div class="col-sm-7 text-left">
 												<select name="selectie">
@@ -56,7 +56,7 @@
 												</select>
 											</div>
 										</div>
-										<div class="col-sm-12 margin-bottom-20">
+										<div class="col-xs-12 margin-bottom-20">
 											<div class="col-sm-3">Judet:</div>
 											<div class="col-sm-7 text-left">
 												<select name="selectie_judet">
@@ -76,7 +76,7 @@
 												</select>
 											</div>
 										</div>
-										<div class="col-sm-12 margin-bottom-20">
+										<div class="col-xs-12 margin-bottom-20">
 											<div class="col-sm-3">Oras:</div>
 											<div class="col-sm-7 text-left">
 												<select name="selectie_oras">
@@ -97,13 +97,13 @@
 												</select>
 											</div>
 										</div>
-										<div class="col-sm-12 margin-bottom-20">
+										<div class="col-xs-12 margin-bottom-20">
 											<div class="col-sm-3">Descriere:</div>
 											<div class="col-sm-7">
 												<textarea name="descriere"><?php echo $rand['descriere_anunt'] ?></textarea>
 											</div>
 										</div>
-										<div class="col-sm-12 text-center">
+										<div class="col-xs-12 text-center">
 											<input type="submit" name="edit" value="Salveaza" class="btn btn-small btn-default-color btn-primary-bg">
 										</div>
 									</form>

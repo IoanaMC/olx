@@ -32,5 +32,9 @@
   margin-top: 20px;
   font-size: 20px;
   line-height: 1; }
+.single-news #map2 {
+  color: #000;
+  margin: 5px;
+  min-height: 200px; }
 
 /*# sourceMappingURL=single-news.css.map */

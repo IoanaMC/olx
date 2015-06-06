@@ -1,16 +1,16 @@
 <?php include('inc/header.inc.php'); ?>
 <?php include('inc/header.php'); ?>
 
-    <div class="col-sm-12">
+    <div class="col-xs-12">
         <div class="container">
             <div class="row">
                 <?php include('inc/menu.php'); ?>
-                <div class="col-sm-12 default-bg padding-bottom-30 cont-style">
-                    <div id="breadcrumb" class="col-sm-12 margin-20">
-                        ACASA / Adauga Produse
+                <div class="col-xs-12 default-bg padding-bottom-30 cont-style">
+                    <div id="breadcrumb" class="col-xs-12 margin-20">
+                        ACASA / Adauga anunt
                     </div>
-                    <div class="col-sm-12">
-                        <div class="col-sm-12">
+                    <div class="col-xs-12">
+                        <div class="col-xs-12">
 							<?php
 								if (isset($_SESSION['nu'])) {
 							?>
@@ -40,21 +40,21 @@
 								echo '</p>';
 							}
 						?>
-						<div class="add-box col-sm-12">
+						<div class="add-box col-xs-12">
 							<form action="insert-news.php" method="post" enctype="multipart/form-data" id="form-insert">
-								<div class="col-sm-12 margin-bottom-20">
+								<div class="col-xs-12 margin-bottom-20">
 									<div class="col-sm-3">Titlu:</div>
 									<div class="col-sm-7">
 										<input type="text" name="titlu">
 									</div>
 								</div>
-								<div class="col-sm-12 margin-bottom-20">
+								<div class="col-xs-12 margin-bottom-20">
 									<div class="col-sm-3">Imagine:</div>
 									<div class="col-sm-7">
 										<input type="file" name="atasament" accept="image/*">
 									</div>
 								</div>
-								<div class="col-sm-12 margin-bottom-20">
+								<div class="col-xs-12 margin-bottom-20">
 									<div class="col-sm-3">Categorie:</div>
 									<div class="col-sm-7 text-left">
 										<select name="selectie">
@@ -69,7 +69,7 @@
 										</select>
 									</div>
 								</div>
-								<div class="col-sm-12 margin-bottom-20">
+								<div class="col-xs-12 margin-bottom-20">
 									<div class="col-sm-3">Judet:</div>
 									<div class="col-sm-7 text-left">
 										<select name="selectie_judet">
@@ -84,7 +84,7 @@
 										</select>
 									</div>
 								</div>
-								<div class="col-sm-12 margin-bottom-20">
+								<div class="col-xs-12 margin-bottom-20">
 									<div class="col-sm-3">Oras:</div>
 									<div class="col-sm-7 text-left">
 										<select name="selectie_oras">
@@ -99,13 +99,13 @@
 										</select>
 									</div>
 								</div>
-								<div class="col-sm-12 margin-bottom-20">
+								<div class="col-xs-12 margin-bottom-20">
 									<div class="col-sm-3">Descriere:</div>
 									<div class="col-sm-7">
 										<textarea name="descriere"></textarea>
 									</div>
 								</div>
-								<div class="col-sm-12 text-center">
+								<div class="col-xs-12 text-center">
 									<input type="submit" name="save" value="Salveaza" class="btn btn-small btn-default-color btn-primary-bg">
 								</div>
 							</form>

@@ -56,21 +56,21 @@ if (isset($_SESSION['nu'])) { /*daca userul e logat*/
 	}
 ?>
 
-<div class="col-sm-12 glow-background">
+<div class="col-xs-12 glow-background">
 	<div class="container">
 		<div class="create-account-message">
             Ati ales sa va faceti cont la <span class="primary-color">Anunturi Vanzari</span>
 		</div>
-		<div class="col-sm-12">
+		<div class="col-xs-12">
 			<div class="col-sm-1"></div>
 			<div class="col-sm-10">
 				<div class="header-form">
 					<strong>Creare</strong> <span class="secondary-color">cont nou</span>
 				</div>
-				<div class="create-form col-sm-12 inline-block">
+				<div class="create-form col-xs-12 inline-block">
                     <?php 
                         if (isset($_POST['newbl'])) {
-                            echo '<div class="col-sm-12 no-padding margin-bottom-10">';
+                            echo '<div class="col-xs-12 no-padding margin-bottom-10">';
                             if (isset($msg1)) {
                                 echo '<p class="text-danger">'.$msg1.'</p>';
                             } else if (isset($msg3)) {
@@ -85,43 +85,43 @@ if (isset($_SESSION['nu'])) { /*daca userul e logat*/
                             echo '</div>';
                         }
                     ?>
-					<div class="text-form col-sm-12">Completati campurile :</div>     
+					<div class="text-form col-xs-12">Completati campurile :</div>     
                     <form action="create-account.php" method="post" name="newLogin" id="form-create-account" class="clearfix">
-                        <div class="col-sm-12">
+                        <div class="col-xs-12">
                             <label for="user">Nume: </label>
-                            <input type="text" placeholder="Nume" name="name" id="name" class="col-sm-12" required="" data-name="Introduceti un nume" data-minLen="Minim 4 caractere"/>
+                            <input type="text" placeholder="Nume" name="name" id="name" class="col-xs-12" required="" data-name="Introduceti un nume" data-minLen="Minim 4 caractere"/>
                         </div>
 
-                        <div class="col-sm-12">
+                        <div class="col-xs-12">
                             <label for="user">Prenume: </label>
-                            <input type="text" placeholder="Prenume" name="surname" id="surname" class="col-sm-12" required="" data-surname="Introduceti un prenume" data-minLen="Minim 4 caractere"/>
+                            <input type="text" placeholder="Prenume" name="surname" id="surname" class="col-xs-12" required="" data-surname="Introduceti un prenume" data-minLen="Minim 4 caractere"/>
                         </div>
 
-                        <div class="col-sm-12">
+                        <div class="col-xs-12">
                             <label for="user">Telefon: </label>
-                            <input type="text" placeholder="Telefon" name="phone" id="phone" class="col-sm-12" required="" data-telephone="Introduceti un numar de telefon" data-valid-telephone="Introduceti un numar de telefon valid"/>
+                            <input type="text" placeholder="Telefon" name="phone" id="phone" class="col-xs-12" required="" data-telephone="Introduceti un numar de telefon" data-valid-telephone="Introduceti un numar de telefon valid"/>
                         </div>
 
-                        <div class="col-sm-12">
+                        <div class="col-xs-12">
                             <label for="user">Email: </label>
-                            <input type="text" placeholder="Email" name="email" id="email" class="col-sm-12" required="" data-email="Introduceti o adresa de email" data-valid-email="Introduceti un email valid"/>
+                            <input type="text" placeholder="Email" name="email" id="email" class="col-xs-12" required="" data-email="Introduceti o adresa de email" data-valid-email="Introduceti un email valid"/>
                         </div>
 
-                        <div class="col-sm-12">
+                        <div class="col-xs-12">
                             <label for="newParola">Parola (minim 4 caractere): </label>
-                            <input type="password" placeholder="Parola" name="password" id="password" class="col-sm-12" data-password="Introduceti o parola" data-minLen="Minim 4 caractere"/>
+                            <input type="password" placeholder="Parola" name="password" id="password" class="col-xs-12" data-password="Introduceti o parola" data-minLen="Minim 4 caractere"/>
                         </div>
 
-                        <div class="col-sm-12">
+                        <div class="col-xs-12">
                             <label for="newParola2">Confirmati parola:</label>
-                            <input type="password" placeholder="Retastati parola" name="confirm_password" id="confirm_password" class="col-sm-12" required="" data-confirm-pass="Confirmati parola">
+                            <input type="password" placeholder="Retastati parola" name="confirm_password" id="confirm_password" class="col-xs-12" required="" data-confirm-pass="Confirmati parola">
                         </div>
 
-                        <div class="col-sm-12">
+                        <div class="col-xs-12">
                             <input type="submit" name="new-account-btn" id="new-account-btn" value="Creaza un cont nou" class="btn btn-small btn-default-color btn-primary-bg float-right">
                         </div>
                     </form>
-					<div class="col-sm-12 text-right">
+					<div class="col-xs-12 text-right">
 						<a href="login.php" class="secondary-color"><b>Acceseaza un cont existent</b></a>
 					</div>
 				</div>
