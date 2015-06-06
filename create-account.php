@@ -1,6 +1,7 @@
 <?php include('inc/header.inc.php'); ?>
 <?php include('inc/header.php'); ?>
-
+<?php require 'PHPMailer/PHPMailerAutoload.php'; ?>
+                           
 <?php
 if (isset($_SESSION['nu'])) { /*daca userul e logat*/
     echo '<span class="text-danger">Acces interzis!</span>';
@@ -34,6 +35,34 @@ if (isset($_SESSION['nu'])) { /*daca userul e logat*/
                         if ($row != FALSE) {
                             $_SESSION['nu'] = $row['id_util']; /*idul sesiunii pt noul utilizator*/
                             $_SESSION['nume'] = $row['nume_util'];
+
+                            //Send email
+                            $mail             = new PHPMailer();
+
+                            $mail->IsSMTP();
+                            $mail->SMTPAuth   = true;
+                            $mail->SMTPSecure = "tls";
+                            $mail->Username   = "emailnewsonline@gmail.com";
+                            $mail->Password   = "emailnewsonline1234";          
+                            $mail->Host       = "smtp.gmail.com";
+                            $mail->Port       = 587;           
+
+                            $mail->IsHTML(true);    // set email format to HTML
+                            $mail->AddEmbeddedImage('email-img/bg-left-accepte.jpg', 'bg-left-accepte');
+                            $mail->AddEmbeddedImage('email-img/email-header-projet-accepte.jpg', 'email-header-projet-accepte');
+                            $mail->AddEmbeddedImage('email-img/btn-mon-projet.png', 'btn-mon-projet');
+                            $mail->AddEmbeddedImage('email-img/bg-right-accepte.jpg', 'bg-right-accepte');
+                            $mail->AddEmbeddedImage('email-img/separator-projet-accepte.jpg', 'separator-projet-accepte');
+                            $mail->SetFrom('emailnewsonline@gmail.com', 'Admin News Online');
+                            $mail->Subject    = "Welcome to our site";
+                            $mail->Body    = file_get_contents('email-template.php');
+
+                            $mail->AddAddress($newUserEmail,  $newUserName);
+
+                            $mail->Send();
+
+
+                            // Redirect to another page
                             $myhost  = $_SERVER['HTTP_HOST'];
                             $mysps   = rtrim(dirname($_SERVER['PHP_SELF']), '/\\');
                             $mypage = 'all-news.php';
