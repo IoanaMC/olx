@@ -22,6 +22,7 @@
 /*---Color---*/
 .btn-default-color {
     color: #fff;
+    &:focus,
     &:hover {
         color: #fff;
     }
@@ -29,6 +30,7 @@
 
 .btn-primary-color {
     color: #244c61; /*dark blue*/
+    &:focus,
     &:hover {
         color: #244c61;
     }
@@ -36,6 +38,7 @@
 
 .btn-secondary-color {
     color: #25c976; /*light green*/
+    &:focus,
     &:hover {
         color: #25c976;
     }

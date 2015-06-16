@@ -18,19 +18,19 @@
 /*---Color---*/
 .btn-default-color {
   color: #fff; }
-  .btn-default-color:hover {
+  .btn-default-color:focus, .btn-default-color:hover {
     color: #fff; }
 
 .btn-primary-color {
   color: #244c61;
   /*dark blue*/ }
-  .btn-primary-color:hover {
+  .btn-primary-color:focus, .btn-primary-color:hover {
     color: #244c61; }
 
 .btn-secondary-color {
   color: #25c976;
   /*light green*/ }
-  .btn-secondary-color:hover {
+  .btn-secondary-color:focus, .btn-secondary-color:hover {
     color: #25c976; }
 
 /*---Background---*/
