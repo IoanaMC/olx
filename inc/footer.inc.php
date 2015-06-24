@@ -1,9 +1,9 @@
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+    <!--<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>-->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	<script src="js/jquery-2.1.3.min.js"></script>
 	
 	<!--flexslider -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+	<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>-->
 	<script src="js/jquery.flexslider.js"></script>
 
 	<!-- validator -->

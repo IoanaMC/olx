@@ -11,7 +11,10 @@
     padding: 15px !important; }
 
   .login-input {
-    width: 100% !important; } }
+    width: 100% !important; }
+
+  .container {
+    width: 100%; } }
 /* sm */
 @media (max-width: 767px) {
   h1 {
@@ -43,7 +46,18 @@
     display: block; }
 
   .hide-mobile {
-    display: none; } }
+    display: none; }
+
+  .single-news .news-image {
+    float: none;
+    max-width: inherit; }
+    .single-news .news-image img {
+      height: 100%; }
+
+  .single-news .user-name,
+  .single-news .news-date {
+    display: block;
+    margin: 0; } }
 /* xs */
 
 /*# sourceMappingURL=responsive.css.map */

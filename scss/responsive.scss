@@ -23,6 +23,10 @@
 	.login-input {
 		width: 100% !important;
 	}
+	
+	.container {
+		width: 100%;
+	}
 }
 
 /* sm */
@@ -67,6 +71,25 @@
 
 	.hide-mobile {
 	    display: none;
+	}
+
+	.single-news {
+		.news-image {
+			float: none;
+			max-width: inherit;
+
+			img {
+				height: 100%;
+			}
+		}
+	}
+
+	.single-news {
+		.user-name,
+		.news-date {
+			display: block;
+			margin: 0;
+		}
 	}
 }
 

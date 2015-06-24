@@ -33,7 +33,7 @@
 										<div class="col-xs-12 margin-bottom-20">
 											<div class="col-sm-3">Titlu:</div>
 											<div class="col-sm-7">
-												<input type="text" name="titlu" value=<?php echo $rand['titlu_anunt'] ?>>
+												<input type="text" name="titlu" value="<?php echo $rand['titlu_anunt'] ?>" />
 											</div>
 										</div>
 										<div class="col-xs-12 margin-bottom-20">
